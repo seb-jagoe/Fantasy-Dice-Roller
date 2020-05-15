@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+body {
+  font-family: "Jost", sans-serif;
+  background-image: url(nobles.jpg);
+  color: #1F1E14;
+}
+
+.dice-roller {
+  position: flex;
+  background-color: rgba(208, 213, 206, 0.801);
+  border-style: solid;
+  padding: 10px;
+}
+
+button {
+  background-color: #B4BC9F;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #C47439;
+}
+
+#rollResult {
+  padding: 8px 0px 0px 4px;
+  font-size: 1.2em;
+}
+
+#history {
+  color: grey;
+}
