@@ -2,21 +2,30 @@
 
 body {
   font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  text-align: center;
   background-image: url(nobles.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
   color: #1F1E14;
+  padding: 0px;
+  margin: 0px;
 }
 
 .dice-roller {
-  position: flex;
+  position: relative;
   background-color: rgba(208, 213, 206, 0.801);
   border-style: solid;
   padding: 10px;
+  margin: 20px 20% auto 20%;
 }
 
 button {
   background-color: #B4BC9F;
   border-radius: 4px;
   padding: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 1.8rem;
 }
 
 button:hover {
@@ -30,4 +39,23 @@ button:hover {
 
 #history {
   color: grey;
+}
+
+.fa-dice-d20 {
+  transition: 0.2s;
+}
+
+.fa-dice-d20:hover {
+  transform: rotate(12deg) scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .dice-roller {
+    margin: 20px 2% auto 2%;
+  }
+
+  body {
+    font-size: 1.5rem;
+    background-size: 200vh;
+  }
 }
